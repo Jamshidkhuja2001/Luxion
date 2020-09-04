@@ -78,20 +78,6 @@ export const Form = (props) => {
           onChange={(e) => setSubCategory(e.target.value)}
           value={subCategory}
         >
-          {/* {selectedCategory === "Очищение" ? (
-            <>
-              <option value="Пенка">Пенка для умывания</option>
-              <option value="Пилинг">Пилинг</option>
-              <option value="Скруб">Скруб</option>
-              <option value="Тонер">Тонер</option>
-              <option value="Маска">Маска</option>
-              <option value="Акссесуар">Акссесуар</option>
-            </>
-          ) : null} */}
-          {/* {selectedCategory === "Очищение" ? <ochishenie />
-            selectedCategory === "Уход" ? <uxod />
-            :null
-        } */}
           <Option />
         </select>
       </div>
