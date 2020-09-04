@@ -67,6 +67,7 @@ export const List = (props) => {
         {products.map((data) => (
           <Row
             key={data._id}
+            _id={data._id}
             category={data.category}
             subCategory={data.subCategory}
             name={data.name}

@@ -3,6 +3,7 @@ import React from "react";
 export const Ochishenie = () => {
   return (
     <>
+      <option value="">Выберите</option>
       <option value="Пенка">Пенка для умывания</option>
       <option value="Пилинг">Пилинг</option>
       <option value="Скруб">Скруб</option>

@@ -24,11 +24,25 @@ exports.createProduct = async (req, res) => {
   }
 };
 
+exports.deleteProduct = async (req, res) => {
+  try {
+    await Product.findByIdAndDelete(req.params.id);
+    res.send(null);
+  } catch (err) {
+    console.log(err.message);
+  }
+};
+
+exports.deleteMany = async (req, res) => {
+  await Product.deleteMany();
+  res.send(null);
+};
+
 exports.updateProduct = async (req, res) => {
   try {
-    const updatedUser = await Product.findOneAndUpdate(
+    const updatedUser = await Product.findByIdAndUpdate(
       req.params.id,
-      res.body,
+      req.body,
       {
         new: true,
       }

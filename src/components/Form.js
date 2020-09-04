@@ -84,6 +84,7 @@ export const Form = (props) => {
       <div className="d-flex flex-column">
         <label htmlFor="cars">Имя Продукта</label>
         <input
+          required
           onChange={(e) => setName(e.target.value)}
           type="text"
           value={name}
@@ -92,6 +93,7 @@ export const Form = (props) => {
       <div className="d-flex flex-column">
         <label htmlFor="cars">Тип Продукта</label>
         <input
+          required
           type="text"
           onChange={(e) => setTypes(e.target.value)}
           value={types}
@@ -101,7 +103,7 @@ export const Form = (props) => {
         <label htmlFor="cars">Покупаемая Цена </label>
         <input
           required
-          type="text"
+          type="number"
           onChange={(e) => setPurchase(e.target.value)}
           value={purchase}
         />
@@ -110,7 +112,7 @@ export const Form = (props) => {
         <label htmlFor="cars">Продаваемая Цена </label>
         <input
           required
-          type="text"
+          type="number"
           onChange={(e) => setSale(e.target.value)}
           value={sale}
         />
